@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Theme  */
+  --color-primary: 28 100% 55%;
+  --color-ink: 222 47% 11%; 
+  --color-muted: 215 16% 47%;
+  --color-bg: 210 40% 98%;
+}
+
+html, body {
+  scroll-behavior: smooth; /* smooth scrolling giữa các anchor */
+}
+
+body {
+  @apply bg-[#f8fafc] text-slate-900 antialiased;
+}
+
+/* Container helper */
+.container-px {
+  @apply px-4 md:px-6 lg:px-8;
+}
+
+/* Button styles */
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-2xl px-5 py-3 font-medium shadow-sm transition;
+  background: hsl(var(--color-primary));
+  color: white;
+}
+.btn-primary:hover { filter: brightness(0.95); }
+
+.btn-ghost {
+  @apply inline-flex items-center justify-center rounded-2xl px-5 py-3 font-medium transition;
+  color: hsl(var(--color-ink));
+}
+.btn-ghost:hover { @apply bg-slate-100; }
+
+/* Section spacing */
+.section {
+  @apply container-px mx-auto w-full max-w-6xl;
+}
+.section-pad {
+  @apply py-16 md:py-24;
+}
