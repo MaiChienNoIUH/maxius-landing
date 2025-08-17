@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Frontend Developer Test
 
-## Getting Started
+## Maxius.io Landing Page
 
-First, run the development server:
+**Inspired by:** [http://maxius.io/#firstPage](http://maxius.io/#firstPage)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Demo & Repository
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Live Demo (Vercel):** [https://your-vercel-link.vercel.app](https://your-vercel-link.vercel.app)  
+- **GitHub Repository:** [https://github.com/your-username/maxius-landing](https://github.com/your-username/maxius-landing)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Next.js** (latest version)
+- **TypeScript** (with strict typing)
+- **Tailwind CSS** for styling
+- **Framer Motion** for animations
 
-## Learn More
+### Features Implemented
 
-To learn more about Next.js, take a look at the following resources:
+- **Hero Section:** Modern opening with slogan and CTA buttons.
+- **About Section:** Introduces company/product.
+- **Features Section:** Highlights key features with smooth animations.
+- **Contact Section:** Fully functional contact form with animated feedback.
+- **Footer:** Minimal, responsive footer.
+- **Responsive Design:** Works seamlessly on desktop, tablet, and mobile.
+- **Animations:** Fade-in, slide-in, hover effects implemented via Framer Motion.
+- **Smooth Scrolling:** Navigation buttons scroll smoothly between sections.
+- **Performance Optimizations:** Lazy-loading of images, code splitting via dynamic imports.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### TypeScript Highlights
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Advanced typing for props and state using interfaces and utility types.
+- Reusable, strongly-typed components.
 
-## Deploy on Vercel
+### Next.js Best Practices
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Modular, well-organized file structure.
+- `next/image` for optimized images.
+- Metadata and OpenGraph/Twitter card support for SEO.
+- Client-side and dynamic imports where appropriate for performance.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Bonus / Extra Features
+
+- Fully deployed on **Vercel** with demo link above.
+- Smooth, professional animations for better UX.
+- Lazy-loaded and dynamically imported heavy components (`Features`, `Contact`).
+- Reusable `btn-primary` class for consistent styling.
+
+---
+
+**Note:** This project is inspired by [Maxius.io](http://maxius.io/) and is built for testing frontend development skills with Next.js and TypeScript. Original design has been adapted and customized.
