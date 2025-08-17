@@ -47,7 +47,7 @@ export default function Navbar() {
       )}
     >
       <div className="section h-16 flex items-center justify-between">
-        <div className="font-bold text-lg">Maxius</div>
+        <div className="font-bold text-lg ml-8">Maxius</div>
         <nav className="hidden md:flex items-center gap-1">
           {items.map((it) => (
             <button

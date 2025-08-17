@@ -17,7 +17,6 @@ export default function Contact() {
     }
     try {
       setStatus("sending");
-      // Demo only: giả lập gửi
       await new Promise((r) => setTimeout(r, 800));
       setStatus("sent");
       setForm({ name: "", email: "", message: "" });
@@ -41,8 +40,8 @@ export default function Contact() {
           </p>
           <ul className="mt-6 space-y-2 text-slate-600">
             <li>📍 Remote-first</li>
-            <li>✉️ hello@maxius.example</li>
-            <li>🕒 Mon–Fri, 9am–6pm</li>
+            <li>✉️ nomai6789@gmail.com</li>
+            <li>🕒 Mon–Fri, 8am–5pm</li>
           </ul>
         </motion.div>
 
