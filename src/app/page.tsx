@@ -1,10 +1,15 @@
+"use client";
+
+import dynamic from "next/dynamic";
 import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import Features from "@/components/Features";
-import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+
+// Dynamic import
+const Features = dynamic(() => import("@/components/Features"), { ssr: false });
+const Contact = dynamic(() => import("@/components/Contact"), { ssr: false });
 
 export default function Page() {
   return (

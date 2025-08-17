@@ -2,7 +2,12 @@
 
 import { motion } from "framer-motion";
 
-const features = [
+type Feature<T = string> = {
+  title: T;
+  desc: T;
+};
+
+const features: Feature[] = [
   { title: "TypeScript-first", desc: "Strong typings for safer, scalable code." },
   { title: "Framer Motion", desc: "Smooth, tasteful animations out of the box." },
   { title: "Responsive", desc: "Looks great on desktop, tablet, and mobile." },
@@ -22,7 +27,7 @@ export default function Features() {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        {features.map((f, i) => (
+        {features.map((f: Feature, i) => (
           <motion.div
             key={f.title}
             initial={{ y: 24, opacity: 0 }}
