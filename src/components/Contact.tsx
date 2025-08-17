@@ -65,18 +65,26 @@ export default function Contact() {
               placeholder="Email address"
               className="w-full rounded-xl border border-slate-300 px-4 py-3 outline-none focus:border-sky-400"
               value={form.email}
-              onChange={(e) => setForm((s) => ({ ...s, email: e.target.value }))}
+              onChange={(e) =>
+                setForm((s) => ({ ...s, email: e.target.value }))
+              }
             />
             <textarea
               placeholder="Your message"
               rows={5}
               className="w-full rounded-xl border border-slate-300 px-4 py-3 outline-none resize-y focus:border-sky-400"
               value={form.message}
-              onChange={(e) => setForm((s) => ({ ...s, message: e.target.value }))}
+              onChange={(e) =>
+                setForm((s) => ({ ...s, message: e.target.value }))
+              }
             />
             <button
+              type="submit"
               disabled={status === "sending"}
-              className="btn-primary"
+              className={`w-full px-6 py-3 rounded-xl font-semibold text-white transition-colors duration-300
+                ${status === "sending"
+                  ? "bg-sky-300 cursor-not-allowed"
+                  : "bg-sky-600 hover:bg-sky-700"}`}
             >
               {status === "idle" && "Send Message"}
               {status === "sending" && "Sending..."}
