@@ -7,7 +7,7 @@
 ### Demo & Repository
 
 - **Live Demo (Vercel):** [https://maxius-landing-lovat.vercel.app/](https://maxius-landing-lovat.vercel.app/)  
-- **GitHub Repository:** [https://github.com/MaiChienNoIUH/maxius-landing(https://github.com/MaiChienNoIUH/maxius-landing)
+- **GitHub Repository:** [https://github.com/MaiChienNoIUH/maxius-landing](https://github.com/MaiChienNoIUH/maxius-landing)
 
 ### Tech Stack
 
